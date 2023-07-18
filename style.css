@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+    --clr-paper: #fffbe6;
+    --clr-receipt: #ebe7d1;
+    --clr-basil: #b9e4c9;
+    --clr-sage: #37966f;
+    --clr-olive: #356859;
+    --clr-tomato: #f62d20;
+    --clr-eggplant: #1d0d0c;
+
+    --font-family-body: 'Montserrat', sans-serif;
+    --font-family-slogan: 'Chilanka', cursive;
+
+    --font-weight-regular: 400;
+    --font-weight-semi-bold: 500;
+    --font-weight-bold: 700;
+
+    --fs-400: 1.3rem;
+    --fs-500: 1.875rem;
+    --fs-600: 1.9rem;
+}
+
+/* https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+    border-radius: 2px;
+    background-color: var(--clr-paper);
+    /* font: inherit; */
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* CONTAINERS */
+.container {
+    --max-width: 1110px;
+    --padding: 1rem;
+
+    width: min(var(--max-width), 100% - (var(--padding) * 2));
+    margin-inline: auto;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+/* HEADER */
+.header,
+.header-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.header {
+    height: 70px;
+}
+#tomato-icon {
+    max-height: 50px;
+}
+
+/*nav links*/
+
+a {
+    color: var(--clr-olive);
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    background-color: var(--clr-basil);
+    text-decoration: none;
+}
+
+/*HERO IMAGE SECTION */
+
+#hero-image-section {
+    min-width: 100vw;
+}
+
+#hero {
+    width: 100%;
+    min-width: 100%;
+}
+
+#slogan {
+    text-align: center;
+    z-index: 100;
+    position: absolute;
+    left: 180px;
+    top: 70px;
+    width: 170px;
+}
+
+/* Utility Classes */
+.text-main-400 {
+    font-family: var(--font-family-body);
+    color: var(--clr-olive);
+
+    font-size: var(--fs-400);
+}
+
+.text-sm-title-400 {
+    font-family: var(--font-family-body);
+    color: var(--clr-olive);
+    font-weight: var(--font-weight-semi-bold);
+    font-size: var(--fs-400);
+}
+
+.text-main-red-400 {
+    font-family: var(--font-family-body);
+    color: var(--clr-tomato);
+    font-weight: var(--font-weight-semi-bold);
+    font-size: var(--fs-400);
+}
+
+.text-slogan-red-500 {
+    font-family: var(--font-family-slogan);
+    color: var(--clr-tomato);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--fs-500);
+}
+
+.text-title-green-600 {
+    font-family: var(--font-family-body);
+    color: var(--clr-olive);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--fs-600);
+}
+
+.text-title-green-500 {
+    font-family: var(--font-family-body);
+    color: var(--clr-olive);
+    font-weight: var(--font-weight-semi-bold);
+    font-size: var(--fs-500);
+}
+
+.text-title-red-600 {
+    font-family: var(--font-family-body);
+    color: var(--clr-tomato);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--fs-600);
+}
+
+.text-header-footer {
+    font-family: var(--font-family-body);
+    color: var(--clr-olive);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--fs-400);
+}
+
+.text-slogan-red-600 {
+    font-family: var(--font-family-slogan);
+    color: var(--clr-tomato);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--fs-600);
+}
+
+.informative-text-bold {
+    font-family: var(--font-family-body);
+    color: var(--clr-paper);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--fs-500);
+}
+
+.informative-text-400 {
+    font-family: var(--font-family-body);
+    color: var(--clr-paper);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--fs-400);
+}
+
+.photograph-description {
+    font-family: var(--font-family-body);
+    color: var(--clr-eggplant);
+    font-weight: var(--font-weight-semi-bold);
+    font-size: var(--fs-500);
+}
+
+/* Screen Sizes */
+
+@media (max-width: 37em) {
+    .header {
+        display: none;
+    }
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
