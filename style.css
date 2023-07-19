@@ -3,7 +3,8 @@
 :root {
     --clr-paper: #fffbe6;
     --clr-receipt: #ebe7d1;
-    --clr-basil: #b9e4c9;
+    --clr-basil: #b9e4c9e8;
+    --clr-basil-light: #b9e4c965;
     --clr-sage: #37966f;
     --clr-olive: #356859;
     --clr-tomato: #f62d20;
@@ -19,6 +20,9 @@
     --fs-400: 1.3rem;
     --fs-500: 1.875rem;
     --fs-600: 1.9rem;
+
+    --background-light: rgba(0, 0, 0, 0.6);
+    --background-dark: rgba(0, 0, 0, 0.9);
 }
 
 /* https://piccalil.li/blog/a-modern-css-reset */
@@ -35,7 +39,6 @@
     margin: 0;
     padding: 0;
     border-radius: 2px;
-    background-color: var(--clr-paper);
     /* font: inherit; */
 }
 
@@ -43,15 +46,6 @@
 ul[role='list'],
 ol[role='list'] {
     list-style: none;
-}
-
-/* CONTAINERS */
-.container {
-    --max-width: 1110px;
-    --padding: 1rem;
-
-    width: min(var(--max-width), 100% - (var(--padding) * 2));
-    margin-inline: auto;
 }
 
 /* Set core root defaults */
@@ -62,6 +56,17 @@ html:focus-within {
 html,
 body {
     height: 100%;
+    background-color: var(--clr-paper);
+}
+
+.title-text {
+    text-align: center;
+}
+
+.underline-title {
+    text-decoration: underline;
+    text-decoration-color: var(--clr-basil);
+    text-underline-offset: 8px;
 }
 
 /* Set core body defaults */
@@ -120,31 +125,10 @@ a:active {
     text-decoration: none;
 }
 
-/*HERO IMAGE SECTION */
-
-#hero-image-section {
-    min-width: 100vw;
-}
-
-#hero {
-    width: 100%;
-    min-width: 100%;
-}
-
-#slogan {
-    text-align: center;
-    z-index: 100;
-    position: absolute;
-    left: 180px;
-    top: 70px;
-    width: 170px;
-}
-
 /* Utility Classes */
 .text-main-400 {
     font-family: var(--font-family-body);
     color: var(--clr-olive);
-
     font-size: var(--fs-400);
 }
 
@@ -158,14 +142,14 @@ a:active {
 .text-main-red-400 {
     font-family: var(--font-family-body);
     color: var(--clr-tomato);
-    font-weight: var(--font-weight-semi-bold);
+    font-weight: var(--font-weight-bold);
     font-size: var(--fs-400);
 }
 
 .text-slogan-red-500 {
     font-family: var(--font-family-slogan);
     color: var(--clr-tomato);
-    font-weight: var(--font-weight-regular);
+    font-weight: var(--font-weight-semi-bold);
     font-size: var(--fs-500);
 }
 
@@ -223,6 +207,11 @@ a:active {
     color: var(--clr-eggplant);
     font-weight: var(--font-weight-semi-bold);
     font-size: var(--fs-500);
+}
+
+.bg-clr-light-green {
+    background-color: var(--clr-basil);
+    width: 100%;
 }
 
 /* Screen Sizes */

@@ -1,0 +1,57 @@
+/* HOME PAGE CONTENTS */
+
+/*HERO IMAGE SECTION */
+
+#hero-image-section {
+    min-width: 100vw;
+}
+
+#hero {
+    width: 100%;
+    min-width: 100%;
+    display: block;
+}
+
+#slogan {
+    text-align: center;
+    padding: 1em;
+}
+
+/* ADDRESS SECTION */
+
+#address-and-title {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--clr-basil);
+}
+
+/* GRID */
+
+#grid-layout {
+    display: grid;
+    gap: 3rem;
+}
+
+@media (min-width: 50em) {
+    #grid-layout {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+}
+
+/* 1961 */
+
+#since-1961,
+#mind-body-soul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+.box-color {
+    background-color: var(--clr-basil-light);
+    height: 1000px;
+    max-width: 850px;
+}
