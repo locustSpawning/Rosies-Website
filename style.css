@@ -61,6 +61,7 @@ body {
 
 .title-text {
     text-align: center;
+    padding-bottom: 1em;
 }
 
 .underline-title {
@@ -87,6 +88,7 @@ picture,
 svg {
     max-width: 100%;
     display: block;
+    border-radius: 2px;
 }
 
 /* HEADER */
@@ -96,7 +98,6 @@ svg {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 60px;
 }
 .header {
     height: 70px;
@@ -107,8 +108,16 @@ svg {
 
 /*nav links*/
 
+.click-box {
+    display: flex;
+    background-color: var(--clr-basil);
+    min-height: 70px;
+    min-width: 100%;
+}
+
 a {
     color: var(--clr-olive);
+    padding: 30px;
 }
 a:link {
     text-decoration: none;
@@ -120,9 +129,48 @@ a:visited {
 a:hover {
     text-decoration: underline;
 }
-a:active {
+
+/* FOOTER */
+#end-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    padding: 0.5em;
+    border: none;
+    background-color: var(--clr-receipt);
+    margin-bottom: 0.5em;
+    box-shadow: 0px 5px 4px -3px rgba(0, 0, 0, 0.15);
+    border: solid 3px;
+    border-color: var(--clr-receipt);
+    transition: transform 0.3s;
+}
+
+.footer-button:hover {
+    background-color: var(--clr-paper);
+    border: solid 3px;
+    border-color: var(--clr-basil);
+    border-radius: 2px;
+}
+
+.footer-button:active {
     background-color: var(--clr-basil);
-    text-decoration: none;
+    border: solid 3px;
+    border-color: var(--clr-basil);
+    border-radius: 2px;
+    transform: scale(1.1);
+}
+
+#up-arrow {
+    max-height: 30px;
+    max-width: 30px;
 }
 
 /* Utility Classes */

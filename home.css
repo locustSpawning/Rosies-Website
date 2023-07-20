@@ -14,7 +14,7 @@
 
 #slogan {
     text-align: center;
-    padding: 1em;
+    padding-top: 1em;
 }
 
 /* ADDRESS SECTION */
@@ -23,19 +23,32 @@
     text-align: center;
     padding: 1em;
     background-color: var(--clr-basil);
+    box-shadow: 5px 5px 4px -3px rgba(0, 0, 0, 0.15);
 }
 
 /* GRID */
 
 #grid-layout {
     display: grid;
-    gap: 3rem;
+    margin: 3em;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 }
 
 @media (min-width: 50em) {
     #grid-layout {
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
+        gap: 3em;
+    }
+
+    #home-photo-family,
+    #home-jersey-tomatoes {
+        margin-top: 1em;
+        box-shadow: 5px 5px 4px -3px rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
     }
 }
 
@@ -47,11 +60,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.5em;
+    padding: 1em 1.5em 0;
+    margin-bottom: 3em;
 }
 
 .box-color {
     background-color: var(--clr-basil-light);
-    height: 1000px;
+    height: 800px;
     max-width: 850px;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 4px -3px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+}
+
+.home-text {
+    min-height: 357.5px;
 }
