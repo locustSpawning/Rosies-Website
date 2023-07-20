@@ -3,13 +3,12 @@
 /*HERO IMAGE SECTION */
 
 #hero-image-section {
-    min-width: 100vw;
+    min-width: 100%;
+    margin: 0;
 }
 
 #hero {
     width: 100%;
-    min-width: 100%;
-    display: block;
 }
 
 #slogan {
@@ -23,7 +22,7 @@
     text-align: center;
     padding: 1em;
     background-color: var(--clr-basil);
-    box-shadow: 5px 5px 4px -3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 4px -3px rgba(0, 0, 0, 0.15);
 }
 
 /* GRID */

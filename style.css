@@ -75,6 +75,7 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    overflow: auto;
 }
 
 /* A elements that don't have a class get default styles */
@@ -284,4 +285,22 @@ a:hover {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+/* SCROLL BAR */
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--clr-basil-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--clr-olive);
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--clr-basil-light);
 }
