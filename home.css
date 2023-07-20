@@ -30,7 +30,7 @@
 
 #grid-layout {
     display: grid;
-    margin: 3em;
+    margin: 3em 3em 0;
     justify-content: center;
     justify-items: center;
     align-content: center;
@@ -66,9 +66,9 @@
 
 .box-color {
     background-color: var(--clr-basil-light);
-    /* height: 800px; */
+    /* height: 800px; */ /* Decided to change these settings - - didn't look great with scaling*/
     max-width: 850px;
-    /* margin-bottom: 80px; */
+    margin-bottom: 80px;
     box-shadow: 5px 5px 4px -3px rgba(0, 0, 0, 0.15);
     border-radius: 2px;
 }

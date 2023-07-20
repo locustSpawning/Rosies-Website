@@ -111,6 +111,8 @@ svg {
 
 .click-box {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--clr-basil);
     min-height: 70px;
     min-width: 100%;
@@ -118,7 +120,7 @@ svg {
 
 a {
     color: var(--clr-olive);
-    padding: 30px;
+    padding: 0 25px 0;
 }
 a:link {
     text-decoration: none;
