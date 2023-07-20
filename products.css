@@ -9,9 +9,13 @@
 }
 
 .product-title {
-    padding-top: 55px;
+    padding-top: 25px;
 }
 #grid-has-it-all {
     padding: 2em;
     display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 }
