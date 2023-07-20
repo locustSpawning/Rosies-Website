@@ -1,0 +1,17 @@
+/* PRODUCTS PAGE CONTENTS */
+
+.box-color-products {
+    background-color: var(--clr-basil-light);
+    max-width: 1500px;
+    margin: 50px 80px 50px;
+    box-shadow: 5px 5px 4px -3px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+}
+
+.product-title {
+    padding-top: 55px;
+}
+#grid-has-it-all {
+    padding: 2em;
+    display: grid;
+}

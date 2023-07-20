@@ -64,7 +64,7 @@
     margin-bottom: 3em;
 }
 
-.box-color {
+.box-color-home {
     background-color: var(--clr-basil-light);
     /* height: 800px; */ /* Decided to change these settings - - didn't look great with scaling*/
     max-width: 850px;
