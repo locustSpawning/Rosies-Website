@@ -9,13 +9,39 @@
 }
 
 .product-title {
-    padding-top: 25px;
+    padding: 25px 0 0;
 }
 #grid-has-it-all {
-    padding: 2em;
+    padding: 2em 4em 2em;
     display: grid;
-    justify-content: space-evenly;
-    justify-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    justify-content: center;
     align-content: center;
+    text-align: center;
+}
+
+@media (min-width: 40em) {
+    #grid-has-it-all {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 60em) {
+    #grid-has-it-all {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+#items-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+#click-here-seasons {
+    padding: 0;
+    color: var(--clr-olive);
+    text-decoration: underline;
 }
