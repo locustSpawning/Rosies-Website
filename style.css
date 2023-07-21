@@ -228,7 +228,7 @@ a:hover {
 .text-title-red-600 {
     font-family: var(--font-family-body);
     color: var(--clr-tomato);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-regular);
     font-size: var(--fs-600);
 }
 

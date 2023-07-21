@@ -1,0 +1,13 @@
+/* HISTORY CONTENT */
+
+#history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+#history-title {
+    padding-top: 1em;
+}
