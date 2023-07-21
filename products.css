@@ -18,12 +18,15 @@
     text-align: center;
     justify-content: center;
     align-content: center;
-    text-align: center;
 }
 
 @media (min-width: 40em) {
     #grid-has-it-all {
         grid-template-columns: repeat(2, 1fr);
+    }
+    #list-grow-with-rosies {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
     }
 }
 
@@ -32,7 +35,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
     .products-text {
-        margin: 0 12em 0;
+        text-align: center;
     }
 }
 
@@ -58,5 +61,49 @@
 }
 
 .products-text {
-    padding: 1em 3em 1em;
+    padding: 2em 3em 4em;
+}
+.products-text-2 {
+    padding: 2em 3em 2em;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.parallax-tomatoes,
+.parallax-rose {
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-tomatoes {
+    background-image: url('images/tomatoes-stock.jpg');
+}
+
+.parallax-rose {
+    background-image: url('images/garden.jpg');
+}
+
+#list-grow-with-rosies {
+    max-width: 1500px;
+    display: grid;
+    padding: 1em 2em 4em;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.organize-grow-with-rosies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
