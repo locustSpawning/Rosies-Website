@@ -31,6 +31,9 @@
     #grid-has-it-all {
         grid-template-columns: repeat(3, 1fr);
     }
+    .products-text {
+        margin: 0 12em 0;
+    }
 }
 
 #items-grid {
@@ -44,4 +47,16 @@
     padding: 0;
     color: var(--clr-olive);
     text-decoration: underline;
+}
+
+#jersey-produce {
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.products-text {
+    padding: 1em 3em 1em;
 }

@@ -70,6 +70,12 @@ body {
     text-underline-offset: 8px;
 }
 
+.underline-title-dark {
+    text-decoration: underline;
+    text-decoration-color: var(--clr-olive);
+    text-underline-offset: 8px;
+}
+
 /* Set core body defaults */
 body {
     min-height: 100vh;
