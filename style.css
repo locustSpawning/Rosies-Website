@@ -108,6 +108,7 @@ svg {
 }
 .header {
     height: 70px;
+    background-color: var(--clr-paper);
 }
 #tomato-icon {
     max-height: 50px;
@@ -272,6 +273,15 @@ a:hover {
 }
 
 /* Screen Sizes */
+
+@media (max-width: 60em) {
+    .text-header-footer {
+        font-size: 1rem;
+    }
+    a {
+        padding: 0 10px 0;
+    }
+}
 
 @media (max-width: 37em) {
     .header {
