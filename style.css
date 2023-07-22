@@ -110,8 +110,32 @@ svg {
     height: 70px;
     background-color: var(--clr-paper);
 }
+
+/*small screen header */
+
+.small-screen-header {
+    height: 40px;
+    background-color: var(--clr-paper);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 800px;
+    padding: 0.5em 1em 2.5em;
+}
+
 #tomato-icon {
     max-height: 50px;
+}
+
+#tomato-icon-small-screen {
+    max-height: 30px;
+}
+
+.menu-button,
+.menu-image {
+    border: none;
+    background-color: var(--clr-paper);
+    max-height: 30px;
 }
 
 /*nav links*/
@@ -183,7 +207,7 @@ a:hover {
     max-width: 30px;
 }
 
-/*Small screen */
+/*Small screen footer*/
 
 #end-page-mini {
     display: flex;
@@ -345,6 +369,18 @@ a:hover {
 
 @media (max-width: 37em) {
     .header {
+        display: none;
+    }
+    .small-screen-header {
+        display: flex;
+    }
+}
+
+@media (min-width: 37em) {
+    .header {
+        display: flex;
+    }
+    .small-screen-header {
         display: none;
     }
 }
