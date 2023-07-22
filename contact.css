@@ -1,0 +1,74 @@
+/* CONTACT PAGE CONTENTS */
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden; /* might have to change this setting for small devices*/
+    background: url(images/strawberries-1326148_1280.jpg);
+    background-size: cover;
+}
+
+#contact-black-box {
+    margin: 0;
+    padding: 60px;
+    background-color: var(--background-dark);
+    height: 1100px;
+    width: 1200px;
+    border-radius: 2px;
+    animation: fadeIn 1.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 5em;
+}
+
+@media (max-width: 60em) {
+    .contact-title {
+        font-size: var(--fs-400);
+    }
+    #contact-black-box {
+        height: 900px;
+        width: 576px;
+    }
+}
+
+@media (max-width: 30em) {
+    #contact-black-box {
+        height: 900px;
+        max-width: 100vw;
+        padding: 5px 0 5px;
+    }
+}
+
+#image-link-fb {
+    margin: 0 auto;
+    width: 60%;
+}
+
+#face-book {
+    width: 100%;
+    display: block;
+    height: 200px;
+    padding-bottom: 1em;
+}
+
+/* SPACING */
+
+.contact-title,
+#first-text,
+#second-text,
+#third-text,
+#fourth-text {
+    padding: 1em;
+}

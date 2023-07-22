@@ -19,7 +19,7 @@
 
     --fs-400: 1.3rem;
     --fs-500: 1.875rem;
-    --fs-600: 1.9rem;
+    --fs-600: 2.5rem;
 
     --background-light: rgba(0, 0, 0, 0.6);
     --background-dark: rgba(0, 0, 0, 0.9);
@@ -258,6 +258,12 @@ a:hover {
     color: var(--clr-paper);
     font-weight: var(--font-weight-bold);
     font-size: var(--fs-500);
+}
+.informative-text-bold-xl {
+    font-family: var(--font-family-body);
+    color: var(--clr-paper);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--fs-600);
 }
 
 .informative-text-400 {
