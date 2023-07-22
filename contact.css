@@ -34,9 +34,6 @@ body {
 }
 
 @media (max-width: 60em) {
-    .contact-title {
-        font-size: var(--fs-400);
-    }
     #contact-black-box {
         height: 900px;
         width: 576px;
