@@ -15,7 +15,6 @@ body {
     height: 1100px;
     width: 1200px;
     border-radius: 2px;
-    animation: fadeIn 1.5s;
     display: flex;
     flex-direction: column;
     align-items: center;

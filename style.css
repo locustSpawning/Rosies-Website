@@ -57,6 +57,10 @@ html,
 body {
     height: 100%;
     background-color: var(--clr-paper);
+    animation: article-load 300ms ease-in 250ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-10px);
+    opacity: 0.5;
 }
 
 .title-text {
@@ -456,4 +460,19 @@ a:hover {
 
 ::-webkit-scrollbar-corner {
     background: var(--clr-basil-light);
+}
+
+/* KEY FRAMES */
+
+@keyframes article-load {
+    0% {
+        background-color: var(--clr-receipt);
+        transform: translateY(-10px);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
