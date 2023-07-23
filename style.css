@@ -124,11 +124,11 @@ svg {
     padding: 2em 1em 2em;
 }
 
-#tomato-icon {
+#melon-icon {
     max-height: 50px;
 }
 
-#tomato-icon-small-screen {
+#melon-icon-small-screen {
     max-height: 40px;
 }
 
@@ -143,6 +143,28 @@ svg {
     text-decoration: underline;
     text-underline-offset: 8px;
     text-align: center;
+    padding-right: 15px;
+}
+
+#drop-down-menu {
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    background-color: var(--clr-paper);
+}
+
+#small-menu-dropdown {
+    text-align: center;
+    padding-bottom: 10px;
+}
+#drop-down-menu ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+.current-page-drop-down {
+    color: var(--clr-sage);
+    font-weight: 800;
 }
 
 /*nav links*/
@@ -394,6 +416,10 @@ a:hover {
         display: flex;
     }
     .small-screen-header {
+        display: none;
+    }
+
+    #small-menu-dropdown {
         display: none;
     }
 }

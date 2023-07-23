@@ -67,13 +67,6 @@
     padding: 2em 3em 2em;
 }
 
-.wrapper {
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    perspective: 10px;
-}
-
 .parallax-tomatoes,
 .parallax-rose {
     min-height: 500px;

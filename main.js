@@ -1,1 +1,1 @@
-console.log("🏵️"),document.querySelector(".footer-button"),window.addEventListener("click",(()=>{window.location.href="#"}));
+(()=>{console.log("🏵️"),document.querySelector(".footer-button"),document.querySelector(".footer-button-mini"),window.addEventListener("click",(()=>{window.location.href="#"}));const e=document.querySelector(".menu-button"),o=document.getElementById("drop-down-menu");e.addEventListener("click",(()=>{"none"==o.style.display?o.style.display="flex":o.style.display="none"}))})();
