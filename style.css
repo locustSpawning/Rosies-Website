@@ -218,6 +218,7 @@ a:hover {
     border: solid 3px;
     border-color: var(--clr-receipt);
     transition: transform 0.3s;
+    align-items: center;
 }
 
 .footer-button:hover {

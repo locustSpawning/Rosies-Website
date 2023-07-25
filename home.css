@@ -28,6 +28,11 @@
 
 /* GRID */
 
+#center-grid {
+    display: flex;
+    justify-content: center;
+}
+
 #grid-layout {
     display: grid;
     margin: 3em 3em 0;
@@ -35,6 +40,7 @@
     justify-items: center;
     align-content: center;
     align-items: center;
+    max-width: 1700px;
 }
 
 @media (min-width: 50em) {
@@ -75,4 +81,20 @@
 
 .home-text {
     min-height: 357.5px;
+}
+
+@media (min-width: 1440px) {
+    #hero {
+        width: 65%;
+        align-self: center;
+    }
+    #hero-image-section {
+        display: flex;
+        justify-content: center;
+        background-color: var(--clr-eggplant);
+    }
+    #grid-layout {
+        justify-content: center;
+        align-items: center;
+    }
 }
