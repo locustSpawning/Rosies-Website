@@ -1,35 +1,22 @@
 /* CONTACT PAGE CONTENTS */
 
 body {
-    min-height: 100vh;
+    min-height: 100%;
+    overflow: auto;
     margin: 0;
-    overflow: hidden; /* might have to change this setting for small devices*/
     background: url(images/strawberries-1326148_1280.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
-/* #contact-black-box {
-    margin: 0;
-    padding: 60px;
-    background-color: var(--background-dark);
-    height: 1100px;
-    width: 1200px;
-    border-radius: 2px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-} */
-
 #contact-black-box {
-    width: min(100% - 2 rem, 600px);
+    width: min(100% - 3 rem, 900px);
     margin-inline: auto;
     background-color: var(--background-dark);
     border-radius: 2px;
     padding: 60px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .contact-main-content {
@@ -39,13 +26,6 @@ body {
     align-items: center;
     align-content: center;
     margin-top: 5em;
-}
-
-@media (max-width: 60em) {
-    #contact-black-box {
-        height: 900px;
-        width: 576px;
-    }
 }
 
 @media (max-width: 30em) {
@@ -76,4 +56,31 @@ body {
 #third-text,
 #fourth-text {
     padding: 1em;
+}
+
+/* FOOTER STYLE */
+#end-page,
+#end-page-mini {
+    padding-top: 20px;
+    background-color: var(--background-dark);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-button {
+    background-color: var(--clr-olive);
+    color: var(--clr-paper);
+}
+
+.footer-button:hover {
+    border-color: var(--clr-basil);
+    background-color: var(--clr-sage);
+    color: var(--clr-paper);
+}
+
+.footer-button:active {
+    border-color: var(--clr-basil);
+    background-color: var(--clr-basil);
+    color: var(--clr-paper);
 }
