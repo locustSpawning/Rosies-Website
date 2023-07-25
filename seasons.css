@@ -1,26 +1,21 @@
 /* SEASONS PAGE CONTENTS */
 
 body {
-    min-height: 100vh;
+    height: auto;
     margin: 0;
-    overflow: hidden; /* might have to change this setting for small devices*/
-    background: url(images/season-background.jpg);
+    overflow: auto;
+    background: url(images/vege-large.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #seasons-black-box {
-    margin: 0;
-    padding: 60px;
+    width: min(100% - 3 rem, 900px);
+    margin-inline: auto;
     background-color: var(--background-dark);
-    height: 1100px;
-    width: 1200px;
     border-radius: 2px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
+    padding: 60px;
+    margin-bottom: 20px;
 }
 
 .seasons-main-content {
@@ -32,25 +27,94 @@ body {
     margin-top: 5em;
 }
 
-.harvest-title,
-#fruit-table {
+.harvest-title {
     padding-bottom: 1.5em;
 }
 
-@media (max-width: 60em) {
+/* TABLES */
+
+caption {
+    color: var(--clr-paper);
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+table {
+    color: var(--clr-olive);
+    font-family: var(--font-family-body);
+    background: var(--clr-paper);
+    text-align: left;
+    border-collapse: collapse;
+    border: 3px solid var(--clr-olive);
+    border-radius: 2px;
+    width: 100%;
+}
+
+th,
+td,
+caption {
+    padding: 0.3rem;
+}
+
+th {
+    background-color: var(--clr-olive);
+    color: var(--clr-paper);
+}
+
+tr:nth-of-type(2n) {
+    background-color: var(--clr-receipt);
+}
+
+@media (max-width: 650px) {
+    th {
+        display: none;
+    }
+
+    td::before {
+        content: attr(data-cell) ': ';
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    td {
+        display: grid;
+        grid-template-columns: 15ch auto;
+        padding: 0.5rem 1rem;
+    }
+
+    td:first-child {
+        padding-top: 1rem;
+    }
+    td:last-child {
+        padding-bottom: 1rem;
+    }
     .harvest-title {
         font-size: var(--fs-400);
     }
-    #seasons-black-box {
-        height: 900px;
-        width: 576px;
-    }
 }
 
-@media (max-width: 30em) {
-    #seasons-black-box {
-        height: 900px;
-        max-width: 100vw;
-        padding: 5px 0 5px;
-    }
+/* FOOTER STYLE */
+
+#end-page,
+#end-page-mini {
+    padding-top: 20px;
+    background-color: var(--background-dark);
+}
+
+.footer-button {
+    background-color: var(--clr-olive);
+    color: var(--clr-paper);
+}
+
+.footer-button:hover {
+    border-color: var(--clr-basil);
+    background-color: var(--clr-sage);
+    color: var(--clr-paper);
+}
+
+.footer-button:active {
+    border-color: var(--clr-basil);
+    background-color: var(--clr-basil);
+    color: var(--clr-paper);
 }
