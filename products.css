@@ -88,8 +88,8 @@
     max-width: 1500px;
     display: grid;
     padding: 1em 2em 4em;
-    justify-items: center;
-    justify-content: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
     align-content: center;
 }
 
