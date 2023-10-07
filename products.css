@@ -68,9 +68,16 @@
     padding: 2em 3em 2em;
 }
 
-.parallax-tomatoes,
+.parallax-tomatoes {
+    min-height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .parallax-rose {
-    min-height: 500px;
+    min-height: 250px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -82,7 +89,7 @@
 }
 
 .parallax-rose {
-    background-image: url('images/garden.jpg');
+    background-image: url('images/flowers.jpg');
 }
 
 #list-grow-with-rosies {
