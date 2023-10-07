@@ -14,7 +14,7 @@ body {
     margin-inline: auto;
     background-color: var(--background-dark);
     border-radius: 2px;
-    padding: 60px;
+    padding: 5rem;
     margin-bottom: 20px;
 }
 
@@ -91,6 +91,9 @@ tr:nth-of-type(2n) {
     }
     .harvest-title {
         font-size: var(--fs-400);
+    }
+    #seasons-black-box {
+        padding: 1rem;
     }
 }
 
