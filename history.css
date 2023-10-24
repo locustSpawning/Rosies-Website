@@ -93,3 +93,11 @@
 .photograph-description {
     text-align: center;
 }
+
+#keep-up {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 2em;
+}

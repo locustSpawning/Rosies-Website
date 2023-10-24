@@ -477,3 +477,55 @@ a:hover {
         opacity: 1;
     }
 }
+
+#credit-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: left;
+    border-radius: 10px;
+    padding: 2em;
+    margin: 5em;
+    background-color: var(--background-dark);
+}
+
+.credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credit-link {
+    padding: 0 0.5em 0;
+}
+
+.credit-link:hover {
+    text-decoration: none;
+    color: var(--clr-olive);
+}
+
+.link {
+    color: var(--clr-paper);
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: var(--font-family-body);
+    padding-top: 1em;
+}
+
+@media (max-width: 37em) {
+    .credits {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 40em) {
+    .link {
+        font-size: 0.8rem;
+        max-width: 356px;
+    }
+    #credits-title {
+        font-size: 0.99rem;
+    }
+}

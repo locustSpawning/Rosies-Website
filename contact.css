@@ -37,7 +37,11 @@ body {
     width: 100%;
     display: block;
     height: 200px;
-    padding-bottom: 1em;
+    /* padding-bottom: 1em; */
+}
+
+#icons8 {
+    align-self: center;
 }
 
 /* SPACING */
@@ -48,6 +52,12 @@ body {
 #third-text,
 #fourth-text {
     padding: 1em;
+}
+
+#fourth-text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 /* FOOTER STYLE */

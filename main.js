@@ -1,1 +1,24 @@
-(()=>{console.log("🏵️");const e=document.querySelector(".footer-button"),t=document.querySelector(".footer-button-mini");e.addEventListener("click",(()=>{window.location.href="#"})),t.addEventListener("click",(()=>{window.location.href="#"}));const n=document.querySelector(".menu-button"),o=document.getElementById("drop-down-menu");n.addEventListener("click",(()=>{"none"==o.style.display?o.style.display="flex":o.style.display="none"}))})();
+const toTop = document.querySelector('.footer-button');
+const toTopMini = document.querySelector('.footer-button-mini');
+
+if (toTop != null) {
+    toTop.addEventListener('click', (e) => {
+        window.location.href = '#';
+    });
+}
+if (toTopMini != null) {
+    toTopMini.addEventListener('click', (e) => {
+        window.location.href = '#';
+    });
+}
+
+const toggleButton = document.querySelector('.menu-button');
+const menuDisplay = document.getElementById('drop-down-menu');
+
+toggleButton.addEventListener('click', (e) => {
+    if (menuDisplay.style.display == 'none') {
+        menuDisplay.style.display = 'flex';
+    } else {
+        menuDisplay.style.display = 'none';
+    }
+});
