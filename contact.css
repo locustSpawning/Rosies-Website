@@ -28,22 +28,6 @@ body {
     background-repeat: no-repeat;
 }
 
-#image-link-fb {
-    margin: 0 auto;
-    width: 60%;
-}
-
-#face-book {
-    width: 100%;
-    display: block;
-    height: 200px;
-    /* padding-bottom: 1em; */
-}
-
-#icons8 {
-    align-self: center;
-}
-
 /* SPACING */
 
 .contact-title,
@@ -83,4 +67,29 @@ body {
     border-color: var(--clr-basil);
     background-color: var(--clr-basil);
     color: var(--clr-paper);
+}
+
+#face-book,
+#instagram {
+    height: 100px;
+    padding-bottom: 1em;
+    transition: 0.1s;
+}
+
+#face-book:hover,
+#instagram:hover {
+    filter: invert(38%) sepia(100%) saturate(6003%) hue-rotate(351deg)
+        brightness(100%) contrast(99%) !important;
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    gap: 2em;
+}
+
+#keep-up {
+    margin: 2em 0 2em;
 }

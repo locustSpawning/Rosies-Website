@@ -56,12 +56,21 @@
     height: 100%;
 }
 
-#rosies-today {
-    border-radius: 2px;
+.cross-photo {
+    height: 700px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 4em;
 }
 
-#today-stand {
-    padding-bottom: 2.5em;
+#rosies-today {
+    text-align: center;
+}
+
+.today-stand {
+    margin-bottom: 2.5em;
+    max-width: 800px;
+    border-radius: 10px;
 }
 
 .news-links:link {
@@ -78,26 +87,36 @@
     padding-bottom: 2em;
 }
 
-#image-link-fb {
-    margin: 0 auto;
-    width: 60%;
+#face-book,
+#instagram {
+    height: 100px;
+    padding-bottom: 1em;
+    transition: 0.1s;
 }
 
-#face-book {
-    width: 100%;
-    display: block;
-    height: 200px;
-    padding-bottom: 1em;
+#face-book:hover,
+#instagram:hover {
+    filter: invert(38%) sepia(100%) saturate(6003%) hue-rotate(351deg)
+        brightness(100%) contrast(99%) !important;
 }
 
 .photograph-description {
     text-align: center;
 }
 
-#keep-up {
+#keep-up,
+#community-involvement {
     display: flex;
     flex-direction: column;
     align-content: center;
     text-align: center;
     padding-bottom: 2em;
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    gap: 2em;
 }

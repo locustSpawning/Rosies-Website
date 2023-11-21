@@ -241,6 +241,26 @@ a:hover {
     max-width: 30px;
 }
 
+#face-book-footer,
+#instagram-footer {
+    height: 75px;
+    padding-bottom: 1em;
+    transition: 0.1s;
+}
+
+#face-book-footer:hover,
+#instagram-footer:hover {
+    filter: invert(38%) sepia(100%) saturate(6003%) hue-rotate(351deg)
+        brightness(100%) contrast(99%) !important;
+}
+
+#socials-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+}
+
 /*Small screen footer*/
 
 #end-page-mini {
@@ -391,6 +411,13 @@ a:hover {
     font-size: var(--fs-500);
 }
 
+.credit-text {
+    font-family: var(--font-family-body);
+    color: var(--clr-eggplant);
+    font-weight: var(--font-weight-semi-bold);
+    font-size: var(--fs-400);
+}
+
 .bg-clr-light-green {
     background-color: var(--clr-basil);
     width: 100%;
@@ -492,6 +519,7 @@ a:hover {
 
 .credits {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

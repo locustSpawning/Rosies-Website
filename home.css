@@ -17,13 +17,18 @@
     text-shadow: 1px 1px 1px var(--clr-eggplant);
 }
 
-/* ADDRESS SECTION */
+/* ADDRESS SECTION & PAYMENT SECTION*/
 
-#address-and-title {
+#address-and-title,
+#payment-options {
     text-align: center;
     padding: 1em;
     background-color: var(--clr-basil);
     box-shadow: 0px 5px 4px -3px rgba(0, 0, 0, 0.15);
+}
+
+#payment-options {
+    margin-bottom: 3em;
 }
 
 /* GRID */
