@@ -103,3 +103,16 @@
         align-items: center;
     }
 }
+
+/* Credits */
+
+#credit-box {
+    max-width: 800px;
+}
+
+#center-credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
